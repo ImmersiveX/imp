@@ -12,17 +12,17 @@ Thumbs.db
 ######################
 *.iml
 .gradle
-/local.properties
-/build
-/captures
+local.properties
+build
+captures
 .externalNativeBuild
 .cxx
 
 # IDE #
 ######################
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+.idea/caches
+.idea/libraries
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml

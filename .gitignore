@@ -11,7 +11,7 @@ Thumbs.db
 # Other #
 ######################
 *.iml
-.gradle
+.gradle/
 local.properties
 build
 captures

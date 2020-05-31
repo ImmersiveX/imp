@@ -5,24 +5,33 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.provider.MediaStore;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
+import com.github.tlaabs.timetableview.Schedule;
+import com.github.tlaabs.timetableview.TimetableView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
     private BottomNavigationView bottomNavigationView;
-    private ViewPager viewPager;
+    private CustomViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,13 +58,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         setUpAdapter(viewPager);
+        viewPager.setPagingEnabled(false);
 
 
-        //User test = new User("test", "test2", "test3");
-        //AppDatabase.getInstance(this).userDao().addUser(test);
-
-
-        //studentName3.setText(AppDatabase.getInstance(this).userDao().getstudentName());
     }
 
     private void setUpAdapter(ViewPager viewPager){

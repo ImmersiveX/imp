@@ -10,4 +10,24 @@
     <string name="profileUpdate">Updated</string>
     <string name="updateBtn">update</string>
     <string name="profilePicture">Profile Picture</string>
+    <string name="dashboardText1">Welcome</string>
+    <string name="dashboardText2">Welcome, </string>
+
+
+    <string-array name="Timetable">
+        <item></item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+    </string-array>
+
+    <string-array name="days">
+        <item >Monday</item>
+        <item >Tuesday</item>
+        <item >Wednesday</item>
+        <item >Thursday</item>
+        <item >Friday</item>
+    </string-array>
 </resources>

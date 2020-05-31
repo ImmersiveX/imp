@@ -6,6 +6,7 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -21,14 +22,17 @@ public class ProfileFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-
+        getActivity().getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
         View view = inflater.inflate(R.layout.fragment_profile, container,false);
+
         final String name = AppDatabase.getInstance(getActivity()).userDao().getstudentName();
         final String surname = AppDatabase.getInstance(getActivity()).userDao().getstudentSurname();
         final String email = AppDatabase.getInstance(getActivity()).userDao().getstudentEmail();
         final EditText studentName = view.findViewById(R.id.stuName);
         final EditText studentSurname = view.findViewById(R.id.stuSurname);
         final EditText studentEmail = view.findViewById(R.id.stuEmail);
+
+
 
         if (name != null) studentName.setText(name);
         if (surname != null) studentSurname.setText(surname);

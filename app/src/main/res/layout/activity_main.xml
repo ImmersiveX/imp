@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/button_nav_bar" />
 
-    <androidx.viewpager.widget.ViewPager
+    <com.immersivex.studentstoolbox.CustomViewPager
         android:id="@+id/fragment_container"
         android:layout_width="0dp"
         android:layout_height="0dp"

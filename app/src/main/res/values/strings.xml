@@ -4,4 +4,10 @@
     <string name="schedule">Schedule</string>
     <string name="settings">Settings</string>
     <string name="profile">Profile</string>
+    <string name="studentName">Name</string>
+    <string name="studentSurname">Surname</string>
+    <string name="studentEmail">E-mail</string>
+    <string name="profileUpdate">Updated</string>
+    <string name="updateBtn">update</string>
+    <string name="profilePicture">Profile Picture</string>
 </resources>
